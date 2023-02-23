@@ -1,14 +1,14 @@
-let initialscore=20
+let initialscore=100
 let highscore=null;
-let randomnumber = generateRandomInteger(20);
+let randomnumber = generateRandomInteger(100);
 function reloadgame(){
     document.getElementById('guessid').value="";
-    document.querySelector('.score').textContent=20
+    document.querySelector('.score').textContent=100
     document.querySelector('#sc').textContent="Start guessing..."
     document.body.style.backgroundColor="#222";
     document.querySelector('.number').style.height="12rem"
     document.querySelector('.number').textContent="?";
-     randomnumber = generateRandomInteger(20);
+     randomnumber = generateRandomInteger(100);
 }
 
 function generateRandomInteger(max) {
